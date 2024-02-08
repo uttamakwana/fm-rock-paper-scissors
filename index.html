@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link
+      rel="icon"
+      type="image/png"
+      sizes="32x32"
+      href="./images/favicon-32x32.png"
+    />
+    <title>Rock, Paper, Scissors</title>
+    <link rel="stylesheet" href="style.css" />
+    <script src="script.js" defer></script>
+  </head>
+  <body>
+    <!-- Score Card Container -->
+    <section class="score-card-container">
+      <h1 class="score-card-heading">
+        <span>Rock</span><span>Paper</span><span>Scissors</span>
+      </h1>
+      <div class="score-card">
+        <strong class="score-card-text">Score</strong>
+        <strong class="score-card-number">0</strong>
+      </div>
+    </section>
+    <!-- Game Area Container -->
+    <section class="game-area-container">
+      <div class="game-inside-container">
+        <img
+          src="images/bg-triangle.svg"
+          alt="bg-triangle"
+          class="bg-triangle"
+        />
+        <div
+          class="rock-inside-container icon-inside-container flex-center"
+          data-value="rock"
+        >
+          <img src="images/icon-rock.svg" alt="icon-rock" />
+        </div>
+        <div
+          class="paper-inside-container icon-inside-container flex-center"
+          data-value="paper"
+        >
+          <img src="images/icon-paper.svg" alt="icon-paper" />
+        </div>
+        <div
+          class="scissors-inside-container icon-inside-container flex-center"
+          data-value="scissors"
+        >
+          <img src="images/icon-scissors.svg" alt="icon-scissors" />
+        </div>
+      </div>
+    </section>
+    <div class="game-decision-container">
+      <div class="game-decision-inside-container">
+        <div class="your-choice-container">
+          <div class="your-choice"></div>
+          <h1>You Picked</h1>
+        </div>
+        <div class="computer-choice-container">
+          <div class="computer-choice"></div>
+          <h1>Computer Picked</h1>
+        </div>
+      </div>
+      <div class="game-decision-button">
+        <div class="game-decision-heading"></div>
+        <button class="play-again-btn">Play Again</button>
+      </div>
+    </div>
+    <!-- Rule Information Container -->
+    <section class="rules-container">
+      <div class="rules-inner-container">
+        <div class="rules-heading">
+          <h1>Rules</h1>
+          <img
+            src="images/icon-close.svg"
+            alt="icon-close"
+            class="rules-close-icon"
+          />
+        </div>
+        <img src="images/image-rules.svg" alt="rules" class="rules-img" />
+      </div>
+    </section>
+    <!-- Rule Button Container -->
+    <div class="rule-btn-container">
+      <button class="rule-btn flex-center" title="Click to know rules!">
+        Rools
+      </button>
+    </div>
+  </body>
+</html>
